@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>greet</title>
+</head>
+<body>
+    <p> Check to see what greeting to use based on the time: </p>
+    
+
+    <script>
+       /* setInterval(() => console.log(new Date().toLocaleTimeString()), 1000);
+       to keep showing time continiously
+       */
+      /* const hour = 22;
+       const name = 'manoj';
+       if (hour>6 &&  hour <12){
+        console.log(`good morning ${name}`);
+        
+       }else if ( hour>13 && hour < 17){
+        console.log(`good afternoon ${name}`);
+       }
+       else{
+        console.log(`good night ${name}`);
+       }
+        */
+
+        const age = 14;
+        const isholiday = true;
+
+        // && has a higher priority than || so for this to work correctly, we need to add brackets () around the || check to make sure that it gets done first.
+
+        if((age <6 || age > 60) && !isholiday){
+            console.log('discount');
+        }else {
+            console.log('no discount');
+        }
+
+        let numm = Math.random();
+        numm > 0.5 ? console.log('heads') : console.log('tails');
+
+
+    </script>
+    
+</body>
+</html>
