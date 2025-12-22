@@ -9,6 +9,7 @@
 
 
     <script>
+        /*
         const product2 = {
             name : 'shirt',
             'delivery-time' : '1 day',
@@ -32,6 +33,36 @@
         console.log(JSON.stringify(product2));
         const jsonString = JSON.stringify(product2);
         console.log(JSON.parse(jsonString));
+        */
+
+        console.log('hello'.length);
+        console.log('Hello'.toUpperCase());
+
+        const object4 = {
+            message: 'good job',
+            price : 799
+        };
+        // get messgae property out
+        //const message = object4.message;
+        const{ message,price }= object4;
+
+        console.log(message,price);
+
+        const object5 ={
+            //message : message
+            message,
+            //method : function function1 (){
+               // console.log(method);
+
+            //}
+
+            method(){
+                console.log('method');
+            }
+        };
+        console.log(object5);
+        object5.method();
+        
 
 
         </script>
